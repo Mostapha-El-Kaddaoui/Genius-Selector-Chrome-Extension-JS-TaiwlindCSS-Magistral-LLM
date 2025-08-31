@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body, input, button, label, h1, p {
+      font-family: 'Oswald', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-pink-400 via-purple-500 to-blue-400 flex items-center justify-center text-slate-900 p-2">
+  <div style="width:500px" class="">
+    <div class="bg-white/70 backdrop-blur-xl rounded-3xl p-10 shadow-2xl mx-auto border border-pink-200/40 ring-2 ring-purple-200/40 hover:ring-4 hover:ring-pink-400/30 transition-all duration-300">
+      <!-- Logo/Icon Placeholder -->
+      <div class="flex justify-center mb-4">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-tr from-pink-400 to-blue-400 flex items-center justify-center shadow-lg">
+          <span class="text-white text-3xl font-bold">G</span>
+        </div>
+      </div>
+      <h1 class="text-4xl font-extrabold text-blue-800 drop-shadow mb-3 text-center tracking-tight">
+        Welcome to GeniusSelector
+      </h1>
+      <p class="text-blue-800 mb-8 text-center text-lg font-medium">
+        This tool is designed to assist students in reading and understanding texts more efficiently.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-blue-800">
+        <div class="block col-span-1">
+          <label class="text-lg font-semibold mb-1 block text-blue-800">Enter your name:</label>
+          <input 
+            id="name"
+            type="text" 
+            placeholder="Your name" 
+            class="mt-2 block w-full p-3 border border-pink-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-purple-400 transition shadow-md bg-white/80 placeholder-blue-300 hover:border-purple-400 text-blue-800"
+          />
+        </div>
+        <div class="block col-span-1">
+          <label class="text-lg font-semibold mb-1 block text-blue-800">Enter your API key:</label>
+          <input 
+            id="apiKey"
+            type="text" 
+            placeholder="Your API key" 
+            class="mt-2 block w-full p-3 border border-pink-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-purple-400 transition shadow-md bg-white/80 placeholder-blue-300 hover:border-purple-400 text-blue-800"
+          />
+        </div>
+        <div class="col-span-2">
+          <label for="description" class="text-lg font-semibold mb-1 block text-blue-800">Output description:</label>
+          <div class="flex mt-2">
+            <input 
+              id="description"
+              type="text" 
+              placeholder="Describe the output you want"
+              class="w-full p-3 border border-pink-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-purple-400 transition shadow-md bg-white/80 placeholder-blue-300 hover:border-purple-400 text-blue-800"
+            />
+            <button 
+              class="ml-2 p-3 bg-gradient-to-r from-purple-700 to-blue-500 text-white font-bold rounded-xl hover:from-purple-800 hover:to-blue-600 transition shadow-lg focus:ring-2 focus:ring-purple-400"
+               id="add-btn"
+            >
+              Add
+            </button>
+          </div>
+        </div>
+        <div id="divParams" class="w-full flex-col col-span-2 space-y-2"></div>
+      </div>
+      <button id="sub-btn" class="mt-10 w-full bg-gradient-to-r from-purple-700 to-blue-500 p-3 text-white font-bold rounded-xl hover:from-purple-800 hover:to-blue-600 transition shadow-lg focus:ring-2 focus:ring-purple-400">
+        Submit
+      </button>
+    </div>
+  </div>
+  <script src="add.js"></script>
+</body>
+</html>
