@@ -1,7 +1,5 @@
 # Genius Selector: Magic at Your Fingertips
 
-![Genius Selector Logo](genius-selector.png)
-
 ## Overview
 
 **Genius Selector** is a Chrome extension designed to empower students and readers by making text comprehension faster, smarter, and more interactive. With a beautiful, modern interface and seamless integration, Genius Selector leverages advanced AI to help you understand, summarize, or transform selected text on any webpage.
@@ -48,6 +46,7 @@ In today's fast-paced digital world, students and lifelong learners face informa
 ## Screenshot
 
 ![Genius Selector UI](genius-selector.png)
+![Genius Selector UI](genius-selector2.png)
 
 ---
 
